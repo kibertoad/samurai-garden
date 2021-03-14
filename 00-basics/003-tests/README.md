@@ -11,4 +11,4 @@
 
 * [Exercise](https://github.com/mwhelan/Katas/tree/master/Katas.BankTransfer)
 * [Courses](https://www.freecodecamp.org/): 
-  * Information Security and Quality Assurance Certification: Quality Assurance and Testing with Chai 
+  * **Quality Assurance Certification**: Quality Assurance and Testing with Chai 

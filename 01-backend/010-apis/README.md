@@ -12,4 +12,4 @@
 ## Guided learning
 
 * [Courses](https://www.freecodecamp.org/):
-  * APIs and Microservices Certification
+  * **APIs and Microservices Certification** (ignore the MongoDB/Mongoose part)

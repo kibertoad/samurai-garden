@@ -14,5 +14,5 @@
 ## Guided learning
 
 * [Courses](https://www.freecodecamp.org/):
-  * JavaScript Algorithms and Data Structures Certification
+  * **JavaScript Algorithms and Data Structures Certification**
 
