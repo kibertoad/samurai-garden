@@ -5,6 +5,7 @@
 
 ## Syllabus
 
+* [Program structure](https://eloquentjavascript.net/02_program_structure.html)
 * [Functions](https://eloquentjavascript.net/03_functions.html)
 * [Objects and arrays](https://eloquentjavascript.net/04_data.html)
 * [Classes](https://eloquentjavascript.net/06_object.html)
@@ -15,4 +16,4 @@
 
 * [Courses](https://www.freecodecamp.org/):
   * **JavaScript Algorithms and Data Structures Certification**
-
+  
