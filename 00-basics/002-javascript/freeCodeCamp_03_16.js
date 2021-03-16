@@ -19,12 +19,12 @@ var f = 10;
 var g = "I am e ";
 console.log(g);
 
-h = h + 1;
-i = i + 5;
-j = j + "String";
-console.log(h);
-console.log(i);
-console.log(j);
+e = e + 1;
+f = f + 5;
+g = g + "String";
+console.log(e);
+console.log(f);
+console.log(g);
 
 var studlyCapVar;
 var properCamelCase;
@@ -111,7 +111,7 @@ var myStrTwo = "I am a \"double quoted\" string inside \"double quotes\".";
 console.log(myStrTwo);
 
 var myStrThree = '<a href = "http://www.example.com" target = "_blank">Link</a>';
-console.log(myStrTree);
+console.log(myStrThree);
 
 var myStrFor = "FirstLine\n\t\\SecondLine\nThirdLine";
 console.log(myStrFor);
