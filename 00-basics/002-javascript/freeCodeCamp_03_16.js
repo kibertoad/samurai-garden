@@ -44,7 +44,7 @@ console.log(difference);
 var productOne = 8 * 10;
 console.log(productOne);
 
-var quotientOne = 66 / 33
+var quotientOne = 66 / 33;
 console.log(quotientOne);
 
 var myVarOne = 87;
