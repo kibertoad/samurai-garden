@@ -91,4 +91,53 @@ console.log(myStr);
 */
 var myStr1="FirstLine\n\t\SecondLine\nThirdLine";
 console.log(myStr1);
-
+var myStr2="The Dragon "+"Has Awoken";
+console.log(myStr2);
+var myStr3="The poor poor cat ";
+myStr3+="Was stuck in Davy Jone's locker"
+console.log(myStr3);
+var myName="Lady V";
+var myStr4="Hey I'm "+myName+" What's up?";
+console.log(myStr4);
+var lastNameLength = 0;
+var lastName = "Cthulhu";
+lastNameLength=lastName.length;
+console.log(lastNameLength);
+var firstLetterOfLastName = "";
+var lastName2 = "Pomeranian";
+firstLetterOfLastName = lastName2[0];
+console.log(firstLetterOfLastName);
+const lastName3 = "Adam the Destroyer";
+const lastLetterOfLastName = lastName3[lastName3.length-1];
+console.log(lastLetterOfLastName);
+var myArray = ["Evil", "Tree", "Squirrel"];
+console.log(myArray);
+//*multi-dimensional array.
+var ComicConvention = [["Nerd count",23,],["Geek count",55]];
+console.log(ComicConvention);
+var FlappyBirdCount = [30,25,10,8,50];
+var myBadLuck;
+myBadLuck=FlappyBirdCount[3];
+console.log(myBadLuck);
+var newArray=[55,66,78,99,100];
+newArray[3]=798;
+console.log(newArray);
+var arrayTree = [
+    [55400,288,555],
+    [678,88,36],
+    [58,17,999],
+    [[100,111,152], 13666, 1444]
+];
+console.log(arrayTree[3]);
+console.log(arrayTree[3][0]);
+console.log(arrayTree[3][0][1]);
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);
+console.log(myArray);
+var myArray2 = [["John", 23], ["cat", 2]];
+var removedFromMyArray=myArray2.pop()
+console.log(myArray2);
+var ourArray = ["Julien", "Jillian", ["Gill"]];
+var removedFromOurArray = ourArray.shift();
+console.log(ourArray);
+//Free Code Camp Basic JavaScript 40% completion
