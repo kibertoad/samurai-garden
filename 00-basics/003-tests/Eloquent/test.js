@@ -37,3 +37,36 @@ for (let i = 0; i < h; i++) {
     }
 }
 console.log(board);
+/////////////////////////
+
+// 3.1 Minimum
+const min = (a,b) =>{
+    return (a <= b) ? a : b;
+};
+
+console.log(min(0, 10));
+// → 0
+console.log(min(0, -10));
+// → -10
+
+
+
+//3.2 Recursion:
+const isEven = e => {
+
+    e = Math.abs(e);
+
+    if(e === 0) return true;
+
+    if(e === 1) return false;
+
+    return isEven(e - 2);
+}
+console.log(isEven(50));
+// → true
+console.log(isEven(75));
+// → false
+console.log(isEven(-1));
+// → ??
+
+// 3.3
