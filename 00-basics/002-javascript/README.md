@@ -16,4 +16,6 @@
 
 * [Courses](https://www.freecodecamp.org/):
   * **JavaScript Algorithms and Data Structures Certification**
-  
+
+* [SoloLearn](https://www.sololearn.com/):
+  * **JavaScript --> [JS Course](https://www.sololearn.com/learning/1024)**
