@@ -147,13 +147,49 @@ const div = document.createElement('div');
 // console.log('First');
 //
 
-// ASYNC / AWAIT 2
-const bit = async function(country){
-    const res =  await fetch('https://api.coinlore.com/api/tickers/');
-    const data = res.json();
-    console.log(data);
+// ASYNC / AWAIT 2 + TRY/CATCH ERR
 
-}
+const bit = async function(bit) {
+    try {
 
-bit();
-console.log('First');
+        // Crypto
+        const res = await fetch('https://api.coinlore.com/api/tickers/');
+        // ERR
+        if(!res.ok) throw new Error('Problem getting data');
+        const data = await res.json();
+        const d = data.data;
+        d.forEach(element => {
+            const h3 = document.createElement('h3');
+            h3.innerHTML = element.name;
+            console.log(h3)
+            div.appendChild(h3);
+
+
+// body.appendChild(div);
+        })
+// Country
+        const resC = await fetch('https://restcountries.eu/rest/v2');
+        if(!resC.ok) throw new Error('Problem getting data');
+        const dataC = await resC.json();
+        const c = dataC;
+        c.forEach(elementC => {
+            const h2 = document.createElement('h2');
+            h2.innerHTML = elementC.name;
+            console.log(h2)
+            div.appendChild(h2);
+        })
+
+    }catch (err){
+        console.error(err);
+    }
+        body.appendChild(div);
+    }
+
+// console.log('1: Will get data'); //1
+// bit();//3
+// console.log('2. Finished getting data');//2
+
+console.log('1: Will get data'); //1
+const d = bit();//2 - return PROMISE
+console.log(d);//2
+console.log('2. Finished getting data');//3
