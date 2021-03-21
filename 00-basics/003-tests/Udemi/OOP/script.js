@@ -77,3 +77,109 @@ console.log(account.latest);
 // set
 account.latest = 50;
 console.log(account.movements); // [200,530,120,300, 50];
+
+
+///////////////////////////////
+// Object.create()
+const PersonProto = {
+    calcAge(){
+        console.log(2021 - this.birthYear);
+    },
+    init(firstName, birthYear){
+        this.firstName = firstName;
+        this.birthYear = birthYear;
+
+    }
+};
+
+const monika = Object.create(PersonProto);
+monika.name = 'Monika';
+monika.birthYear = 2012;
+monika.calcAge();
+
+const ona = Object.create(PersonProto);
+ona.init('Ona', 2015);
+ona.calcAge();
+
+// Inheritance
+
+class Person2 {
+    constructor (firstName, lastName, birthYear){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthYear = birthYear;
+    }
+
+    calcAge(){
+        console.log(2021 - this.birthYear);
+    }
+}
+
+
+class Student extends Person2 {
+constructor(firstName,lastName,birthYear, course){
+    super(firstName,lastName,birthYear);
+    this.course = course;
+}
+introduce (){
+console.log(`My name is ${this.firstName} and I study ${this.course}`);
+
+}
+}
+const julius = new Student('Julius', 'Julaitis', 1998, 'JavaScript');
+console.log(julius);
+julius.introduce();
+
+class Account {
+    // Public fields/////////
+    locale = navigator.language;
+    // Private fields///////
+    #movements = [];
+    #pin;
+    constructor(owner, currency, pin) {
+        this.owner = owner;
+        this.currency = currency;
+        // protected property _
+        this.#pin = pin;
+        // this._movements = [];
+        // this.locale = navigator.language;
+    }
+
+    //   Public method
+    getMovements() {
+        return this.#movements;
+    }
+    deposit(val) {
+        this.#movements.push(val);
+    }
+
+    withdrow(val) {
+        this.deposit(-val);
+    }
+
+    requestLone(val) {
+        if (this.#approveLoan(val)) {
+            this.deposit(val);
+            console.log('Loan approved');
+        }
+    }
+    //   protected method
+    #approveLoan(val) {
+        return true;
+    }
+}
+
+const acc1 = new Account('Aurelija', 'Eur', 1234);
+console.log(acc1);
+
+// acc1._movements.push(200);
+// acc1._movements.push(-150);
+// console.log(acc1)
+acc1.deposit(250);
+acc1.withdrow(125);
+acc1.requestLone(1000);
+
+console.log(acc1);
+
+// console.log(acc1.#movements);
+// console.log(acc1.#approveLoan(200));
