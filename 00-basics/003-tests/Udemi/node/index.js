@@ -4,6 +4,7 @@
 const fs = require('fs'); //file system
 const http = require('http');
 const url = require('url');
+
 // FILES ///////////////////////////////////////////////////
 // //SYNCHRONOUS /avoid
 // // Read files from txt
@@ -42,6 +43,7 @@ const url = require('url');
 
 
 // ///////////////////////////////////////////////////////////////////
+
 //SERVER
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const productData = JSON.parse(data);
